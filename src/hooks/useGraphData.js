@@ -7,7 +7,7 @@ export function useGraphData() {
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch('/graph.json', { signal: controller.signal })
+    fetch(`${import.meta.env.BASE_URL}graph.json`, { signal: controller.signal })
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json();
