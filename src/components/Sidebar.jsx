@@ -301,7 +301,7 @@ export function Sidebar({
                         {liascriptUrl && (
                           <Tooltip title="Open in LiaScript">
                             <a href={liascriptUrl} target="_blank" rel="noreferrer" style={{ lineHeight: 1, display: 'inline-flex' }}>
-                              <img src="/lia_icon.png" alt="LiaScript" style={{ width: 18, height: 18 }} />
+                              <img src={`${import.meta.env.BASE_URL}lia_icon.png`} alt="LiaScript" style={{ width: 18, height: 18 }} />
                             </a>
                           </Tooltip>
                         )}
